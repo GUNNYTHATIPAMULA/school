@@ -1,0 +1,67 @@
+.all{
+    width: 100%;
+    height: auto;
+    background-color: #2D033B !important;
+   
+}
+body{
+    background-color: #2D033B;
+}
+p{
+    color: rgb(242, 246, 249);
+}
+h3{
+    color: white;
+}
+.a{
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+    width: 100% !important;
+    background-color: #2D033B !important;
+}
+
+.aa{
+
+    margin-left: 50% !important;
+}
+.aa:hover{
+    color: black;
+}
+a{
+    color: white !important;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2D033B;
+}
+
+.vid{
+    width: 22%;
+    height: 200px;
+    margin: 70px 0 0 30px;
+    border-radius: 20px;
+    background-color: brown;
+    overflow: hidden;
+}
+@media screen and (max-width:1000px) and (min-width:700px) {
+    .vid{
+        width: 29%;
+    }    
+}
+@media screen and (max-width:700px) and (min-width:600px) {
+    .vid{
+        width: 45%;
+    }
+}
+@media screen and (max-width:600px) and (min-width:330px){
+    .box{
+        margin-top: 10px;
+    }
+    .vid{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
