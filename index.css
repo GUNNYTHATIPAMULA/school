@@ -1,6 +1,7 @@
 .full{
     width: 100%;
     background-color: #2D033B;
+    height: auto;
 }
 body{
     line-height: var(--bs-body-line-height);
@@ -71,7 +72,7 @@ h3{
     width: 100%;
     height: 70px;
 }
-.card{
+.ev{
     margin-right: 50px;
     flex: 0 0 auto;
     width:400px ;
@@ -110,6 +111,83 @@ a{
 .d{
     margin-top: 30px;
     height: 250px;
+}
+.facility{
+    display: flex;
+    height: 250px;
+    margin-top: 180px;
+    background-color: antiquewhite;
+}
+.bus{
+    width: 33.5%;
+    height: 250px;
+    background-color: #62B6B7;
+}
+.fee{
+        width: 33.5%;
+        background-color: yellow;
+        height: 250px;
+}
+.activity{
+    width: 33.5%;
+    height: 250px;
+    background-color: orange;
+}
+.map{
+    display: flex;
+    
+}
+.ma{
+    width: 75%;
+    height: 500px;
+}
+.form{
+    background-color: #62B6B7;
+    height: 500px;
+    width: 25%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.msg{
+    text-align: center;
+    position: relative;
+    top: 13.5%;
+    width: 100%;
+    height: 435px;
+    border-radius: 20px;
+
+    background-color: #0C134F;
+}
+.for{
+    position: relative;
+    left: 25px;
+    top: -60px;
+    width: 85%;
+    text-align: center;
+    border-radius: 15px;
+    height: 200px;
+    background-color: rgb(249, 249, 243);
+}
+h3{
+    color: black;
+}
+#name,#email,#text{
+    position: relative;
+    top: -40px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+#don{
+    width: 60%;
+    background-color: transparent;
+    color: blue;
+    border: 0;
+}
+input:focus{
+    outline: 0;
 }
 
 @media screen and (max-width:1040px) {
@@ -156,9 +234,31 @@ a{
         width: 300px;
         height: 450px;
     }
-    #BUT{margin-top: 60px;}
+    #BUT{margin-top: 60px;
+    }
 }
 .im{
     width: 100%;
     height: 100%;
+}
+@media screen and (max-width:1199px) and (min-width:750px) {
+    .form{
+        width: 40%;
+    }
+    .ma{
+        width: 60%;
+    }
+}
+@media screen and (max-width:750px) and (min-width:330px) {
+    .map{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .ma{
+        width: 100%;
+    }
+    .form{
+        width: 80%;
+
+    }
 }
